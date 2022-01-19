@@ -1,0 +1,906 @@
+2022-01-19 14:32:35  [scrapy.utils.log] INFO  Scrapy 2.5.1 started (bot: agrarheute)
+2022-01-19 14:32:35  [scrapy.utils.log] INFO  Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Windows-10-10.0.19043-SP0
+2022-01-19 14:32:35  [scrapy.utils.log] DEBUG  Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-01-19 14:32:35  [scrapy.crawler] INFO  Overridden settings:
+{'BOT_NAME': 'agrarheute',
+ 'NEWSPIDER_MODULE': 'agrarheute.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['agrarheute.spiders']}
+2022-01-19 14:32:35  [scrapy.extensions.telnet] INFO  Telnet Password: 7c1f0c9f709040a0
+2022-01-19 14:32:35  [scrapy.middleware] INFO  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-01-19 14:32:35  [scrapy.middleware] INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-01-19 14:32:35  [scrapy.middleware] INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'agrarheute.middlewares.SaveErrorsMiddleware']
+2022-01-19 14:32:35  [scrapy.middleware] INFO  Enabled item pipelines:
+[]
+2022-01-19 14:32:35  [scrapy.core.engine] INFO  Spider opened
+2022-01-19 14:32:35  [scrapy.extensions.logstats] INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-01-19 14:32:35  [scrapy.extensions.telnet] INFO  Telnet console listening on 127.0.0.1:6023
+2022-01-19 14:32:37  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/robots.txt> (referer: None)
+2022-01-19 14:32:38  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel/> (referer: None)
+2022-01-19 14:32:38  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel/> (referer: None)
+2022-01-19 14:32:38  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/kuhmilch-25> (referer: None)
+2022-01-19 14:32:38  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere/> (referer: None)
+2022-01-19 14:32:38  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/diesel-5> (referer: None)
+2022-01-19 14:32:38  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel/
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Sojaschrot</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/sojaschrot-16
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Rapsschrot</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/rapsschrot-17
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Heu</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/heu-18
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Stroh</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/stroh-19
+2022-01-19 14:32:38  [root] INFO  Parse function called on https://markt.agrarheute.com/kuhmilch-25
+2022-01-19 14:32:38  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel/
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Stickstoffdünger</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Phosphordünger</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kalidünger</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/kaliduenger-22
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Mehrnährstoffdünger</h2>'>
+2022-01-19 14:32:38  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere/
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/s...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Schweine</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/schweine-11
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/f...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Ferkel</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/ferkel-12
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/j...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Jungbullen</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/jungbullen-13
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/k...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kühe</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/kuehe-14
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/n...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Nutzkälber</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kalkdünger</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/kalkduenger-24
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/nutzkaelber-15
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/s...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Sauen</h2>'>
+2022-01-19 14:32:38  [root] INFO  Parse function called on https://markt.agrarheute.com/diesel-5
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/sauen-26
+2022-01-19 14:32:38  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/f...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Färsen</h2>'>
+2022-01-19 14:32:38  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/faersen-27
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte/> (referer: None)
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte/
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Weizen</h2>'>
+2022-01-19 14:32:39  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/weizen-6
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Raps</h2>'>
+2022-01-19 14:32:39  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/raps-7
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Mais</h2>'>
+2022-01-19 14:32:39  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/mais-8
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Gerste</h2>'>
+2022-01-19 14:32:39  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/gerste-9
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Roggen</h2>'>
+2022-01-19 14:32:39  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/roggen-10
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kartoffeln</h2>'>
+2022-01-19 14:32:39  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/sojaschrot-16> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/rapsschrot-17> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/heu-18> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/stroh-19> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:32:39  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/jungbullen-13> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/sojaschrot-16
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sojaschrot, 43/44% Rohprotein...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot, 43/44% Rohprotein', 'price': '499,85 EUR', 'unit': 't', 'vorwoche': '50,87', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/heu-18
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Heu, Großballen</td><td>112,9...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/heu-18>
+{'Category': 'Heu', 'Product': {'product_name': 'Heu, Großballen', 'price': '112,99 EUR', 'unit': 't', 'vorwoche': '0,70', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/rapsschrot-17
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Rapsschrot</td><td>402,23 EUR...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/rapsschrot-17>
+{'Category': 'Rapsschrot', 'Product': {'product_name': 'Rapsschrot', 'price': '402,23 EUR', 'unit': 't', 'vorwoche': '25,31', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Rapsschrot
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kalkammonsalpeter, 27 % N</td...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Kalkammonsalpeter, 27 % N', 'price': '613,00 EUR', 'unit': 't', 'vorwoche': '6,00', 'spanne': '525,00 - 681,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Sojaschrot, 43/44% Rohprotein
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sojaschrot GMO, 48% Rohprotei...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot GMO, 48% Rohprotein', 'price': '523,26 EUR', 'unit': 't', 'vorwoche': '52,22', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Sojaschrot GMO, 48% Rohprotein
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sojaschrot Non-GMO, 44% Rohpr...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot Non-GMO, 44% Rohprotein', 'price': '726,81 EUR', 'unit': 't', 'vorwoche': '33,07', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Heu, Großballen
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Kalkammonsalpeter, 27 % N
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Harnstoff 46% N, geprillt</td...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Harnstoff 46% N, geprillt', 'price': '894,00 EUR', 'unit': 't', 'vorwoche': '57,00', 'spanne': '800,00 - 920,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Harnstoff 46% N, geprillt
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Harnstoff 46% N, granuliert</...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Harnstoff 46% N, granuliert', 'price': '834,00 EUR', 'unit': 't', 'vorwoche': '-35,00', 'spanne': '740,00 - 899,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Harnstoff 46% N, granuliert
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Ammoniumnitrat-Harnstoff-Lösu...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Ammoniumnitrat-Harnstoff-Lösung, 28 % N', 'price': '613,00 EUR', 'unit': 't', 'vorwoche': '22,00', 'spanne': '550,00 - 654,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Sojaschrot Non-GMO, 44% Rohprotein
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/stroh-19
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Stroh, Großballen</td><td>91,...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/stroh-19>
+{'Category': 'Stroh', 'Product': {'product_name': 'Stroh, Großballen', 'price': '91,69 EUR', 'unit': 't', 'vorwoche': '1,38', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Stroh, Großballen
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Ammoniumnitrat-Harnstoff-Lösung, 28 % N
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Ammonsulfatsalpeter, 27 % N</...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Ammonsulfatsalpeter, 27 % N', 'price': '651,00 EUR', 'unit': 't', 'vorwoche': '9,00', 'spanne': '575,00 - 710,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Ammonsulfatsalpeter, 27 % N
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Schwefels. Ammoniak, 21 % N, ...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Schwefels. Ammoniak, 21 % N, 24 % S', 'price': '573,00 EUR', 'unit': 't', 'vorwoche': '30,00', 'spanne': '418,00 - 650,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Schwefels. Ammoniak, 21 % N, 24 % S
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Alzon, 46 % N</td><td>913,00 ...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Alzon, 46 % N', 'price': '913,00 EUR', 'unit': 't', 'vorwoche': '3,00', 'spanne': '900,00 - 930,00'}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Alzon, 46 % N
+2022-01-19 14:32:39  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/jungbullen-13
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Jungbullen  U3</td><td>4,81 E...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  U3', 'price': '4,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,08', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Jungbullen  U3
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Jungbullen  R3</td><td>4,76 E...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  R3', 'price': '4,76 EUR', 'unit': 'kg SG', 'vorwoche': '0,07', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Jungbullen  R3
+2022-01-19 14:32:39  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Jungbullen  O3</td><td>4,47 E...'>
+2022-01-19 14:32:39  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  O3', 'price': '4,47 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:32:39  [root] INFO  final yield  called on product  Jungbullen  O3
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/kuehe-14> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/ferkel-12> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/schweine-11> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/kaliduenger-22> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/kuehe-14
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kühe R3</td><td>3,69 EUR/kg S...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe R3', 'price': '3,69 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Kühe R3
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kühe O3</td><td>3,56 EUR/kg S...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe O3', 'price': '3,56 EUR', 'unit': 'kg SG', 'vorwoche': '0,12', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Kühe O3
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kühe P2</td><td>3,03 EUR/kg S...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe P2', 'price': '3,03 EUR', 'unit': 'kg SG', 'vorwoche': '0,11', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Kühe P2
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/ferkel-12
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Ferkel 28 kg Basis (100er Gru...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/ferkel-12>
+{'Category': 'Ferkel', 'Product': {'product_name': 'Ferkel 28 kg Basis (100er Gruppe)', 'price': '26,75 EUR', 'unit': 'Stück', 'vorwoche': '-0,93', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/schweine-11
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Schweine  S</td><td>1,30 EUR/...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Schweine  S', 'price': '1,30 EUR', 'unit': 'kg SG', 'vorwoche': '-0,01', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Schweine  S
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Schweine  E</td><td>1,28 EUR/...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Schweine  E', 'price': '1,28 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>NPK 13/9/16/4</td><td>349,00 ...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 13/9/16/4', 'price': '349,00 EUR', 'unit': 't', 'vorwoche': '2,00', 'spanne': '330,00 - 365,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  NPK 13/9/16/4
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>NPK 14/10/16/5</td><td>324,00...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 14/10/16/5', 'price': '324,00 EUR', 'unit': 't', 'vorwoche': '3,00', 'spanne': '310,00 - 365,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Ferkel 28 kg Basis (100er Gruppe)
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Schweine  E
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sauen M</td><td>0,81 EUR/kg S...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Sauen M', 'price': '0,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Sauen M
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  NPK 14/10/16/5
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>NPK 15/15/15</td><td>598,00 E...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 15/15/15', 'price': '598,00 EUR', 'unit': 't', 'vorwoche': '-13,00', 'spanne': '528,00 - 681,00'}}
+2022-01-19 14:32:40  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/sauen-26> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/kaliduenger-22
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kornkali 40 % K2O, </td><td>3...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kornkali 40 % K2O, ', 'price': '387,00 EUR', 'unit': 't', 'vorwoche': '9,00', 'spanne': '335,00 - 415,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Kornkali 40 % K2O, 
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kornkali 60 % K2O, </td><td>5...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kornkali 60 % K2O, ', 'price': '532,00 EUR', 'unit': 't', 'vorwoche': '-10,00', 'spanne': '499,00 - 610,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Kornkali 60 % K2O, 
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kalimagnesia, 30% + 10%</td><...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kalimagnesia, 30% + 10%', 'price': '501,00 EUR', 'unit': 't', 'vorwoche': '14,00', 'spanne': '395,00 - 560,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Kalimagnesia, 30% + 10%
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Magnesia Kainit, 11% + 5%</td...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Magnesia Kainit, 11% + 5%', 'price': '152,00 EUR', 'unit': 't', 'vorwoche': '2,00', 'spanne': '130,00 - 190,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Magnesia Kainit, 11% + 5%
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  NPK 15/15/15
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Triple-Superphosphat (TSP), 4...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21>
+{'Category': 'Phosphordünger', 'Product': {'product_name': 'Triple-Superphosphat (TSP), 46 % P2O5', 'price': '631,00 EUR', 'unit': 't', 'vorwoche': '48,00', 'spanne': '629,00 - 640,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Triple-Superphosphat (TSP), 46 % P2O5
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Diammonphosphat (DAP), 18 % N...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21>
+{'Category': 'Phosphordünger', 'Product': {'product_name': 'Diammonphosphat (DAP), 18 % N, 46 % P2O5', 'price': '823,00 EUR', 'unit': 't', 'vorwoche': '57,00', 'spanne': '730,00 - 905,00'}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Diammonphosphat (DAP), 18 % N, 46 % P2O5
+2022-01-19 14:32:40  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/sauen-26
+2022-01-19 14:32:40  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sauen M</td><td>0,81 EUR/kg S...'>
+2022-01-19 14:32:40  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/sauen-26>
+{'Category': 'Sauen', 'Product': {'product_name': 'Sauen M', 'price': '0,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:32:40  [root] INFO  final yield  called on product  Sauen M
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/faersen-27> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/roggen-10> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/gerste-9> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/mais-8> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/faersen-27
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Färsen R3</td><td>4,32 EUR/kg...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/faersen-27>
+{'Category': 'Färsen', 'Product': {'product_name': 'Färsen R3', 'price': '4,32 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Speisekartoffeln, vorw. festk...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28>
+{'Category': 'Kartoffeln', 'Product': {'product_name': 'Speisekartoffeln, vorw. festkochend', 'price': '17,04 EUR', 'unit': 'dt', 'vorwoche': '0,00', 'spanne': '12,00 - 23,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Speisekartoffeln, vorw. festkochend
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/roggen-10
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Brotroggen</td><td>231,51 EUR...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/roggen-10>
+{'Category': 'Roggen', 'Product': {'product_name': 'Brotroggen', 'price': '231,51 EUR', 'unit': 't', 'vorwoche': '-0,38', 'spanne': '195,00 - 254,50'}}
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/gerste-9
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Braugerste</td><td>357,10 EUR...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/gerste-9>
+{'Category': 'Gerste', 'Product': {'product_name': 'Braugerste', 'price': '357,10 EUR', 'unit': 't', 'vorwoche': '2,93', 'spanne': '300,00 - 380,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Färsen R3
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Brotroggen
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Braugerste
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Futtergerste</td><td>236,72 E...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/gerste-9>
+{'Category': 'Gerste', 'Product': {'product_name': 'Futtergerste', 'price': '236,72 EUR', 'unit': 't', 'vorwoche': '-1,88', 'spanne': '215,00 - 263,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Futtergerste
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/mais-8
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Körnermais</td><td>242,45 EUR...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/mais-8>
+{'Category': 'Mais', 'Product': {'product_name': 'Körnermais', 'price': '242,45 EUR', 'unit': 't', 'vorwoche': '1,82', 'spanne': '220,00 - 276,50'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Körnermais
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/raps-7> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/kalkduenger-24> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/raps-7
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Raps</td><td>764,58 EUR/t</td...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/raps-7>
+{'Category': 'Raps', 'Product': {'product_name': 'Raps', 'price': '764,58 EUR', 'unit': 't', 'vorwoche': '29,57', 'spanne': '685,00 - 810,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Raps
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/kalkduenger-24
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kohlensaurer Kalk, 80% + 5%</...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kalkduenger-24>
+{'Category': 'Kalkdünger', 'Product': {'product_name': 'Kohlensaurer Kalk, 80% + 5%', 'price': '36,00 EUR', 'unit': 't', 'vorwoche': '4,00', 'spanne': '25,00 - 42,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Kohlensaurer Kalk, 80% + 5%
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Konverterkalk, feucht, 38% + ...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kalkduenger-24>
+{'Category': 'Kalkdünger', 'Product': {'product_name': 'Konverterkalk, feucht, 38% + 5%', 'price': '38,00 EUR', 'unit': 't', 'vorwoche': '0,00', 'spanne': '30,00 - 42,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Konverterkalk, feucht, 38% + 5%
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/nutzkaelber-15> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/nutzkaelber-15
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Nutzkälber, schwarzbunt, männ...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/nutzkaelber-15>
+{'Category': 'Nutzkälber', 'Product': {'product_name': 'Nutzkälber, schwarzbunt, männlich', 'price': '72,00 EUR', 'unit': 'Stück', 'vorwoche': '-4,63', 'spanne': ' - '}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Nutzkälber, schwarzbunt, männlich
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Nutzkälber, Fleckvieh, männli...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/nutzkaelber-15>
+{'Category': 'Nutzkälber', 'Product': {'product_name': 'Nutzkälber, Fleckvieh, männlich', 'price': '4,96 EUR', 'unit': 'kg', 'vorwoche': '0,46', 'spanne': ' - '}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Nutzkälber, Fleckvieh, männlich
+2022-01-19 14:32:41  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/weizen-6> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:32:41  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/weizen-6
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>A-Weizen, 13% RP, 230 Fz.</td...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'A-Weizen, 13% RP, 230 Fz.', 'price': '274,69 EUR', 'unit': 't', 'vorwoche': '0,96', 'spanne': '260,00 - 291,50'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  A-Weizen, 13% RP, 230 Fz.
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Brotweizen</td><td>266,41 EUR...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Brotweizen', 'price': '266,41 EUR', 'unit': 't', 'vorwoche': '-0,71', 'spanne': '250,00 - 284,50'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Brotweizen
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Futterweizen</td><td>256,40 E...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Futterweizen', 'price': '256,40 EUR', 'unit': 't', 'vorwoche': '-0,92', 'spanne': '238,00 - 284,50'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Futterweizen
+2022-01-19 14:32:41  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Eliteweizen</td><td>287,31 EU...'>
+2022-01-19 14:32:41  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Eliteweizen', 'price': '287,31 EUR', 'unit': 't', 'vorwoche': '2,63', 'spanne': '264,00 - 308,00'}}
+2022-01-19 14:32:41  [root] INFO  final yield  called on product  Eliteweizen
+2022-01-19 14:32:41  [scrapy.core.engine] INFO  Closing spider (finished)
+2022-01-19 14:32:41  [scrapy.statscollectors] INFO  Dumping Scrapy stats:
+{'downloader/request_bytes': 8118,
+ 'downloader/request_count': 29,
+ 'downloader/request_method_count/GET': 29,
+ 'downloader/response_bytes': 1260766,
+ 'downloader/response_count': 29,
+ 'downloader/response_status_count/200': 29,
+ 'elapsed_time_seconds': 5.978119,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 19, 9, 2, 41, 976082),
+ 'httpcompression/response_bytes': 8492701,
+ 'httpcompression/response_count': 28,
+ 'item_scraped_count': 48,
+ 'log_count/DEBUG': 77,
+ 'log_count/INFO': 178,
+ 'request_depth_max': 1,
+ 'response_received_count': 29,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 28,
+ 'scheduler/dequeued/memory': 28,
+ 'scheduler/enqueued': 28,
+ 'scheduler/enqueued/memory': 28,
+ 'start_time': datetime.datetime(2022, 1, 19, 9, 2, 35, 997963)}
+2022-01-19 14:32:41  [scrapy.core.engine] INFO  Spider closed (finished)
+2022-01-19 14:42:19  [scrapy.utils.log] INFO  Scrapy 2.5.1 started (bot: agrarheute)
+2022-01-19 14:42:20  [scrapy.utils.log] INFO  Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Windows-10-10.0.19043-SP0
+2022-01-19 14:42:20  [scrapy.utils.log] DEBUG  Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-01-19 14:42:20  [scrapy.crawler] INFO  Overridden settings:
+{'BOT_NAME': 'agrarheute',
+ 'NEWSPIDER_MODULE': 'agrarheute.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['agrarheute.spiders']}
+2022-01-19 14:42:20  [scrapy.extensions.telnet] INFO  Telnet Password: fd80578ebbcf6846
+2022-01-19 14:42:20  [scrapy.middleware] INFO  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-01-19 14:42:20  [scrapy.middleware] INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-01-19 14:42:20  [scrapy.middleware] INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'agrarheute.middlewares.SaveErrorsMiddleware']
+2022-01-19 14:42:20  [scrapy.middleware] INFO  Enabled item pipelines:
+[]
+2022-01-19 14:42:20  [scrapy.core.engine] INFO  Spider opened
+2022-01-19 14:42:20  [scrapy.extensions.logstats] INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-01-19 14:42:20  [scrapy.extensions.telnet] INFO  Telnet console listening on 127.0.0.1:6023
+2022-01-19 14:42:21  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/robots.txt> (referer: None)
+2022-01-19 14:42:22  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte/> (referer: None)
+2022-01-19 14:42:22  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte/
+2022-01-19 14:42:22  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Weizen</h2>'>
+2022-01-19 14:42:22  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/weizen-6
+2022-01-19 14:42:22  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Raps</h2>'>
+2022-01-19 14:42:22  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/raps-7
+2022-01-19 14:42:22  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Mais</h2>'>
+2022-01-19 14:42:22  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/mais-8
+2022-01-19 14:42:22  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Gerste</h2>'>
+2022-01-19 14:42:22  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/gerste-9
+2022-01-19 14:42:22  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Roggen</h2>'>
+2022-01-19 14:42:22  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/roggen-10
+2022-01-19 14:42:22  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/marktfrue...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kartoffeln</h2>'>
+2022-01-19 14:42:22  [root] INFO  yield  called to follow  https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28
+2022-01-19 14:42:23  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel/> (referer: None)
+2022-01-19 14:42:23  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere/> (referer: None)
+2022-01-19 14:42:23  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel/
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Stickstoffdünger</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Phosphordünger</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kalidünger</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/kaliduenger-22
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Mehrnährstoffdünger</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/duengemit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kalkdünger</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/duengemittel-4/kalkduenger-24
+2022-01-19 14:42:23  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere/
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/s...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Schweine</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/schweine-11
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/f...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Ferkel</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/ferkel-12
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/j...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Jungbullen</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/jungbullen-13
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/k...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Kühe</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/kuehe-14
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/n...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Nutzkälber</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/nutzkaelber-15
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/s...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Sauen</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/sauen-26
+2022-01-19 14:42:23  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/tiere-2/f...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Färsen</h2>'>
+2022-01-19 14:42:23  [root] INFO  yield  called to follow  https://markt.agrarheute.com/tiere-2/faersen-27
+2022-01-19 14:42:23  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/diesel-5> (referer: None)
+2022-01-19 14:42:23  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/kuhmilch-25> (referer: None)
+2022-01-19 14:42:23  [root] INFO  Parse function called on https://markt.agrarheute.com/diesel-5
+2022-01-19 14:42:23  [root] INFO  Parse function called on https://markt.agrarheute.com/kuhmilch-25
+2022-01-19 14:42:23  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/weizen-6> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/weizen-6
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>A-Weizen, 13% RP, 230 Fz.</td...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'A-Weizen, 13% RP, 230 Fz.', 'price': '274,69 EUR', 'unit': 't', 'vorwoche': '0,96', 'spanne': '260,00 - 291,50'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  A-Weizen, 13% RP, 230 Fz.
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Brotweizen</td><td>266,41 EUR...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Brotweizen', 'price': '266,41 EUR', 'unit': 't', 'vorwoche': '-0,71', 'spanne': '250,00 - 284,50'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Brotweizen
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Futterweizen</td><td>256,40 E...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Futterweizen', 'price': '256,40 EUR', 'unit': 't', 'vorwoche': '-0,92', 'spanne': '238,00 - 284,50'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Futterweizen
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Eliteweizen</td><td>287,31 EU...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Eliteweizen', 'price': '287,31 EUR', 'unit': 't', 'vorwoche': '2,63', 'spanne': '264,00 - 308,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Eliteweizen
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel/> (referer: None)
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/gerste-9> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/mais-8> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel/
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Sojaschrot</h2>'>
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/gerste-9
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Braugerste</td><td>357,10 EUR...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/gerste-9>
+{'Category': 'Gerste', 'Product': {'product_name': 'Braugerste', 'price': '357,10 EUR', 'unit': 't', 'vorwoche': '2,93', 'spanne': '300,00 - 380,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Braugerste
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Futtergerste</td><td>236,72 E...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/gerste-9>
+{'Category': 'Gerste', 'Product': {'product_name': 'Futtergerste', 'price': '236,72 EUR', 'unit': 't', 'vorwoche': '-1,88', 'spanne': '215,00 - 263,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Futtergerste
+2022-01-19 14:42:24  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/sojaschrot-16
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Rapsschrot</h2>'>
+2022-01-19 14:42:24  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/rapsschrot-17
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Heu</h2>'>
+2022-01-19 14:42:24  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/heu-18
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/a" data='<a class="al-bottom" href="/futtermit...'> and <Selector xpath="//div[@class='cat-card col-12 col-sm-6 card text-center']/h2" data='<h2>Stroh</h2>'>
+2022-01-19 14:42:24  [root] INFO  yield  called to follow  https://markt.agrarheute.com/futtermittel-3/stroh-19
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/mais-8
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Körnermais</td><td>242,45 EUR...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/mais-8>
+{'Category': 'Mais', 'Product': {'product_name': 'Körnermais', 'price': '242,45 EUR', 'unit': 't', 'vorwoche': '1,82', 'spanne': '220,00 - 276,50'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Körnermais
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/raps-7> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/raps-7
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Raps</td><td>764,58 EUR/t</td...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/raps-7>
+{'Category': 'Raps', 'Product': {'product_name': 'Raps', 'price': '764,58 EUR', 'unit': 't', 'vorwoche': '29,57', 'spanne': '685,00 - 810,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Raps
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kalkammonsalpeter, 27 % N</td...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Kalkammonsalpeter, 27 % N', 'price': '613,00 EUR', 'unit': 't', 'vorwoche': '6,00', 'spanne': '525,00 - 681,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Kalkammonsalpeter, 27 % N
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Harnstoff 46% N, geprillt</td...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Harnstoff 46% N, geprillt', 'price': '894,00 EUR', 'unit': 't', 'vorwoche': '57,00', 'spanne': '800,00 - 920,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Harnstoff 46% N, geprillt
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Harnstoff 46% N, granuliert</...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Harnstoff 46% N, granuliert', 'price': '834,00 EUR', 'unit': 't', 'vorwoche': '-35,00', 'spanne': '740,00 - 899,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Harnstoff 46% N, granuliert
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Ammoniumnitrat-Harnstoff-Lösu...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Ammoniumnitrat-Harnstoff-Lösung, 28 % N', 'price': '613,00 EUR', 'unit': 't', 'vorwoche': '22,00', 'spanne': '550,00 - 654,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Ammoniumnitrat-Harnstoff-Lösung, 28 % N
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Ammonsulfatsalpeter, 27 % N</...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Ammonsulfatsalpeter, 27 % N', 'price': '651,00 EUR', 'unit': 't', 'vorwoche': '9,00', 'spanne': '575,00 - 710,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Ammonsulfatsalpeter, 27 % N
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Schwefels. Ammoniak, 21 % N, ...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Schwefels. Ammoniak, 21 % N, 24 % S', 'price': '573,00 EUR', 'unit': 't', 'vorwoche': '30,00', 'spanne': '418,00 - 650,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Schwefels. Ammoniak, 21 % N, 24 % S
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Alzon, 46 % N</td><td>913,00 ...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Alzon, 46 % N', 'price': '913,00 EUR', 'unit': 't', 'vorwoche': '3,00', 'spanne': '900,00 - 930,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Alzon, 46 % N
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/nutzkaelber-15> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/roggen-10> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Speisekartoffeln, vorw. festk...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28>
+{'Category': 'Kartoffeln', 'Product': {'product_name': 'Speisekartoffeln, vorw. festkochend', 'price': '17,04 EUR', 'unit': 'dt', 'vorwoche': '0,00', 'spanne': '12,00 - 23,00'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Speisekartoffeln, vorw. festkochend
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/nutzkaelber-15
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Nutzkälber, schwarzbunt, männ...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/nutzkaelber-15>
+{'Category': 'Nutzkälber', 'Product': {'product_name': 'Nutzkälber, schwarzbunt, männlich', 'price': '72,00 EUR', 'unit': 'Stück', 'vorwoche': '-4,63', 'spanne': ' - '}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Nutzkälber, schwarzbunt, männlich
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Nutzkälber, Fleckvieh, männli...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/nutzkaelber-15>
+{'Category': 'Nutzkälber', 'Product': {'product_name': 'Nutzkälber, Fleckvieh, männlich', 'price': '4,96 EUR', 'unit': 'kg', 'vorwoche': '0,46', 'spanne': ' - '}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Nutzkälber, Fleckvieh, männlich
+2022-01-19 14:42:24  [root] INFO  Parse function called on https://markt.agrarheute.com/marktfruechte-1/roggen-10
+2022-01-19 14:42:24  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Brotroggen</td><td>231,51 EUR...'>
+2022-01-19 14:42:24  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/roggen-10>
+{'Category': 'Roggen', 'Product': {'product_name': 'Brotroggen', 'price': '231,51 EUR', 'unit': 't', 'vorwoche': '-0,38', 'spanne': '195,00 - 254,50'}}
+2022-01-19 14:42:24  [root] INFO  final yield  called on product  Brotroggen
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/ferkel-12> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/ferkel-12
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Ferkel 28 kg Basis (100er Gru...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/ferkel-12>
+{'Category': 'Ferkel', 'Product': {'product_name': 'Ferkel 28 kg Basis (100er Gruppe)', 'price': '26,75 EUR', 'unit': 'Stück', 'vorwoche': '-0,93', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Ferkel 28 kg Basis (100er Gruppe)
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/schweine-11> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/kuehe-14> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/schweine-11
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Schweine  S</td><td>1,30 EUR/...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Schweine  S', 'price': '1,30 EUR', 'unit': 'kg SG', 'vorwoche': '-0,01', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Schweine  S
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Schweine  E</td><td>1,28 EUR/...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Schweine  E', 'price': '1,28 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Schweine  E
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sauen M</td><td>0,81 EUR/kg S...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Sauen M', 'price': '0,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Sauen M
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/jungbullen-13> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/kalkduenger-24> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/kuehe-14
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kühe R3</td><td>3,69 EUR/kg S...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe R3', 'price': '3,69 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kühe R3
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kühe O3</td><td>3,56 EUR/kg S...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe O3', 'price': '3,56 EUR', 'unit': 'kg SG', 'vorwoche': '0,12', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kühe O3
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kühe P2</td><td>3,03 EUR/kg S...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe P2', 'price': '3,03 EUR', 'unit': 'kg SG', 'vorwoche': '0,11', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kühe P2
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/jungbullen-13
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Jungbullen  U3</td><td>4,81 E...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  U3', 'price': '4,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,08', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Jungbullen  U3
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Jungbullen  R3</td><td>4,76 E...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  R3', 'price': '4,76 EUR', 'unit': 'kg SG', 'vorwoche': '0,07', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Jungbullen  R3
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Jungbullen  O3</td><td>4,47 E...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  O3', 'price': '4,47 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Jungbullen  O3
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/kalkduenger-24
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kohlensaurer Kalk, 80% + 5%</...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kalkduenger-24>
+{'Category': 'Kalkdünger', 'Product': {'product_name': 'Kohlensaurer Kalk, 80% + 5%', 'price': '36,00 EUR', 'unit': 't', 'vorwoche': '4,00', 'spanne': '25,00 - 42,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kohlensaurer Kalk, 80% + 5%
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Konverterkalk, feucht, 38% + ...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kalkduenger-24>
+{'Category': 'Kalkdünger', 'Product': {'product_name': 'Konverterkalk, feucht, 38% + 5%', 'price': '38,00 EUR', 'unit': 't', 'vorwoche': '0,00', 'spanne': '30,00 - 42,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Konverterkalk, feucht, 38% + 5%
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/faersen-27> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/kaliduenger-22> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/sauen-26> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/faersen-27
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Färsen R3</td><td>4,32 EUR/kg...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/faersen-27>
+{'Category': 'Färsen', 'Product': {'product_name': 'Färsen R3', 'price': '4,32 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Färsen R3
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/kaliduenger-22
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kornkali 40 % K2O, </td><td>3...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kornkali 40 % K2O, ', 'price': '387,00 EUR', 'unit': 't', 'vorwoche': '9,00', 'spanne': '335,00 - 415,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kornkali 40 % K2O, 
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kornkali 60 % K2O, </td><td>5...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kornkali 60 % K2O, ', 'price': '532,00 EUR', 'unit': 't', 'vorwoche': '-10,00', 'spanne': '499,00 - 610,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kornkali 60 % K2O, 
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Kalimagnesia, 30% + 10%</td><...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kalimagnesia, 30% + 10%', 'price': '501,00 EUR', 'unit': 't', 'vorwoche': '14,00', 'spanne': '395,00 - 560,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Kalimagnesia, 30% + 10%
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Magnesia Kainit, 11% + 5%</td...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Magnesia Kainit, 11% + 5%', 'price': '152,00 EUR', 'unit': 't', 'vorwoche': '2,00', 'spanne': '130,00 - 190,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Magnesia Kainit, 11% + 5%
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>NPK 13/9/16/4</td><td>349,00 ...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 13/9/16/4', 'price': '349,00 EUR', 'unit': 't', 'vorwoche': '2,00', 'spanne': '330,00 - 365,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  NPK 13/9/16/4
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>NPK 14/10/16/5</td><td>324,00...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 14/10/16/5', 'price': '324,00 EUR', 'unit': 't', 'vorwoche': '3,00', 'spanne': '310,00 - 365,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  NPK 14/10/16/5
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>NPK 15/15/15</td><td>598,00 E...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 15/15/15', 'price': '598,00 EUR', 'unit': 't', 'vorwoche': '-13,00', 'spanne': '528,00 - 681,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  NPK 15/15/15
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/tiere-2/sauen-26
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sauen M</td><td>0,81 EUR/kg S...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/sauen-26>
+{'Category': 'Sauen', 'Product': {'product_name': 'Sauen M', 'price': '0,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Sauen M
+2022-01-19 14:42:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:42:25  [root] INFO  Parse function called on https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Triple-Superphosphat (TSP), 4...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21>
+{'Category': 'Phosphordünger', 'Product': {'product_name': 'Triple-Superphosphat (TSP), 46 % P2O5', 'price': '631,00 EUR', 'unit': 't', 'vorwoche': '48,00', 'spanne': '629,00 - 640,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Triple-Superphosphat (TSP), 46 % P2O5
+2022-01-19 14:42:25  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Diammonphosphat (DAP), 18 % N...'>
+2022-01-19 14:42:25  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21>
+{'Category': 'Phosphordünger', 'Product': {'product_name': 'Diammonphosphat (DAP), 18 % N, 46 % P2O5', 'price': '823,00 EUR', 'unit': 't', 'vorwoche': '57,00', 'spanne': '730,00 - 905,00'}}
+2022-01-19 14:42:25  [root] INFO  final yield  called on product  Diammonphosphat (DAP), 18 % N, 46 % P2O5
+2022-01-19 14:42:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/heu-18> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:42:26  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/heu-18
+2022-01-19 14:42:26  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Heu, Großballen</td><td>112,9...'>
+2022-01-19 14:42:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/heu-18>
+{'Category': 'Heu', 'Product': {'product_name': 'Heu, Großballen', 'price': '112,99 EUR', 'unit': 't', 'vorwoche': '0,70', 'spanne': ' - '}}
+2022-01-19 14:42:26  [root] INFO  final yield  called on product  Heu, Großballen
+2022-01-19 14:42:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/sojaschrot-16> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:42:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/stroh-19> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:42:26  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/sojaschrot-16
+2022-01-19 14:42:26  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sojaschrot, 43/44% Rohprotein...'>
+2022-01-19 14:42:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot, 43/44% Rohprotein', 'price': '499,85 EUR', 'unit': 't', 'vorwoche': '50,87', 'spanne': ' - '}}
+2022-01-19 14:42:26  [root] INFO  final yield  called on product  Sojaschrot, 43/44% Rohprotein
+2022-01-19 14:42:26  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sojaschrot GMO, 48% Rohprotei...'>
+2022-01-19 14:42:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot GMO, 48% Rohprotein', 'price': '523,26 EUR', 'unit': 't', 'vorwoche': '52,22', 'spanne': ' - '}}
+2022-01-19 14:42:26  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/stroh-19
+2022-01-19 14:42:26  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Stroh, Großballen</td><td>91,...'>
+2022-01-19 14:42:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/stroh-19>
+{'Category': 'Stroh', 'Product': {'product_name': 'Stroh, Großballen', 'price': '91,69 EUR', 'unit': 't', 'vorwoche': '1,38', 'spanne': ' - '}}
+2022-01-19 14:42:26  [root] INFO  final yield  called on product  Stroh, Großballen
+2022-01-19 14:42:26  [root] INFO  final yield  called on product  Sojaschrot GMO, 48% Rohprotein
+2022-01-19 14:42:26  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Sojaschrot Non-GMO, 44% Rohpr...'>
+2022-01-19 14:42:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot Non-GMO, 44% Rohprotein', 'price': '726,81 EUR', 'unit': 't', 'vorwoche': '33,07', 'spanne': ' - '}}
+2022-01-19 14:42:26  [root] INFO  final yield  called on product  Sojaschrot Non-GMO, 44% Rohprotein
+2022-01-19 14:42:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/rapsschrot-17> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:42:26  [root] INFO  Parse function called on https://markt.agrarheute.com/futtermittel-3/rapsschrot-17
+2022-01-19 14:42:26  [root] INFO  xpath called on <Selector xpath='//table/tbody/tr' data='<tr><td>Rapsschrot</td><td>402,23 EUR...'>
+2022-01-19 14:42:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/rapsschrot-17>
+{'Category': 'Rapsschrot', 'Product': {'product_name': 'Rapsschrot', 'price': '402,23 EUR', 'unit': 't', 'vorwoche': '25,31', 'spanne': ' - '}}
+2022-01-19 14:42:26  [root] INFO  final yield  called on product  Rapsschrot
+2022-01-19 14:42:26  [scrapy.core.engine] INFO  Closing spider (finished)
+2022-01-19 14:42:26  [scrapy.statscollectors] INFO  Dumping Scrapy stats:
+{'downloader/request_bytes': 8118,
+ 'downloader/request_count': 29,
+ 'downloader/request_method_count/GET': 29,
+ 'downloader/response_bytes': 1267481,
+ 'downloader/response_count': 29,
+ 'downloader/response_status_count/200': 29,
+ 'elapsed_time_seconds': 6.247421,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 19, 9, 12, 26, 713876),
+ 'httpcompression/response_bytes': 8521438,
+ 'httpcompression/response_count': 28,
+ 'item_scraped_count': 48,
+ 'log_count/DEBUG': 77,
+ 'log_count/INFO': 178,
+ 'request_depth_max': 1,
+ 'response_received_count': 29,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 28,
+ 'scheduler/dequeued/memory': 28,
+ 'scheduler/enqueued': 28,
+ 'scheduler/enqueued/memory': 28,
+ 'start_time': datetime.datetime(2022, 1, 19, 9, 12, 20, 466455)}
+2022-01-19 14:42:26  [scrapy.core.engine] INFO  Spider closed (finished)
+2022-01-19 14:43:23  [scrapy.utils.log] INFO  Scrapy 2.5.1 started (bot: agrarheute)
+2022-01-19 14:43:23  [scrapy.utils.log] INFO  Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Windows-10-10.0.19043-SP0
+2022-01-19 14:43:23  [scrapy.utils.log] DEBUG  Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-01-19 14:43:23  [scrapy.crawler] INFO  Overridden settings:
+{'BOT_NAME': 'agrarheute',
+ 'NEWSPIDER_MODULE': 'agrarheute.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['agrarheute.spiders']}
+2022-01-19 14:43:23  [scrapy.extensions.telnet] INFO  Telnet Password: 9b78ed2ea2adcb63
+2022-01-19 14:43:23  [scrapy.middleware] INFO  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-01-19 14:43:23  [scrapy.middleware] INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-01-19 14:43:23  [scrapy.middleware] INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'agrarheute.middlewares.SaveErrorsMiddleware']
+2022-01-19 14:43:23  [scrapy.middleware] INFO  Enabled item pipelines:
+[]
+2022-01-19 14:43:23  [scrapy.core.engine] INFO  Spider opened
+2022-01-19 14:43:23  [scrapy.extensions.logstats] INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-01-19 14:43:23  [scrapy.extensions.telnet] INFO  Telnet console listening on 127.0.0.1:6023
+2022-01-19 14:43:24  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/robots.txt> (referer: None)
+2022-01-19 14:43:25  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte/> (referer: None)
+2022-01-19 14:43:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/kuhmilch-25> (referer: None)
+2022-01-19 14:43:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/diesel-5> (referer: None)
+2022-01-19 14:43:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere/> (referer: None)
+2022-01-19 14:43:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel/> (referer: None)
+2022-01-19 14:43:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel/> (referer: None)
+2022-01-19 14:43:26  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/mais-8> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:43:26  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/mais-8>
+{'Category': 'Mais', 'Product': {'product_name': 'Körnermais', 'price': '242,45 EUR', 'unit': 't', 'vorwoche': '1,82', 'spanne': '220,00 - 276,50'}}
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/roggen-10> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/gerste-9> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/weizen-6> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/kartoffeln-28>
+{'Category': 'Kartoffeln', 'Product': {'product_name': 'Speisekartoffeln, vorw. festkochend', 'price': '17,04 EUR', 'unit': 'dt', 'vorwoche': '0,00', 'spanne': '12,00 - 23,00'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/roggen-10>
+{'Category': 'Roggen', 'Product': {'product_name': 'Brotroggen', 'price': '231,51 EUR', 'unit': 't', 'vorwoche': '-0,38', 'spanne': '195,00 - 254,50'}}
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/kuehe-14> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/marktfruechte-1/raps-7> (referer: https://markt.agrarheute.com/marktfruechte/)
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/gerste-9>
+{'Category': 'Gerste', 'Product': {'product_name': 'Braugerste', 'price': '357,10 EUR', 'unit': 't', 'vorwoche': '2,93', 'spanne': '300,00 - 380,00'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/gerste-9>
+{'Category': 'Gerste', 'Product': {'product_name': 'Futtergerste', 'price': '236,72 EUR', 'unit': 't', 'vorwoche': '-1,88', 'spanne': '215,00 - 263,00'}}
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/schweine-11> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:27  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/nutzkaelber-15> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'A-Weizen, 13% RP, 230 Fz.', 'price': '274,69 EUR', 'unit': 't', 'vorwoche': '0,96', 'spanne': '260,00 - 291,50'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Brotweizen', 'price': '266,41 EUR', 'unit': 't', 'vorwoche': '-0,71', 'spanne': '250,00 - 284,50'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Futterweizen', 'price': '256,40 EUR', 'unit': 't', 'vorwoche': '-0,92', 'spanne': '238,00 - 284,50'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/weizen-6>
+{'Category': 'Weizen', 'Product': {'product_name': 'Eliteweizen', 'price': '287,31 EUR', 'unit': 't', 'vorwoche': '2,63', 'spanne': '264,00 - 308,00'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe R3', 'price': '3,69 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe O3', 'price': '3,56 EUR', 'unit': 'kg SG', 'vorwoche': '0,12', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/kuehe-14>
+{'Category': 'Kühe', 'Product': {'product_name': 'Kühe P2', 'price': '3,03 EUR', 'unit': 'kg SG', 'vorwoche': '0,11', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/marktfruechte-1/raps-7>
+{'Category': 'Raps', 'Product': {'product_name': 'Raps', 'price': '764,58 EUR', 'unit': 't', 'vorwoche': '29,57', 'spanne': '685,00 - 810,00'}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/nutzkaelber-15>
+{'Category': 'Nutzkälber', 'Product': {'product_name': 'Nutzkälber, schwarzbunt, männlich', 'price': '72,00 EUR', 'unit': 'Stück', 'vorwoche': '-4,63', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/nutzkaelber-15>
+{'Category': 'Nutzkälber', 'Product': {'product_name': 'Nutzkälber, Fleckvieh, männlich', 'price': '4,96 EUR', 'unit': 'kg', 'vorwoche': '0,46', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Schweine  S', 'price': '1,30 EUR', 'unit': 'kg SG', 'vorwoche': '-0,01', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Schweine  E', 'price': '1,28 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:43:27  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/schweine-11>
+{'Category': 'Schweine', 'Product': {'product_name': 'Sauen M', 'price': '0,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Kalkammonsalpeter, 27 % N', 'price': '613,00 EUR', 'unit': 't', 'vorwoche': '6,00', 'spanne': '525,00 - 681,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Harnstoff 46% N, geprillt', 'price': '894,00 EUR', 'unit': 't', 'vorwoche': '57,00', 'spanne': '800,00 - 920,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Harnstoff 46% N, granuliert', 'price': '834,00 EUR', 'unit': 't', 'vorwoche': '-35,00', 'spanne': '740,00 - 899,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Ammoniumnitrat-Harnstoff-Lösung, 28 % N', 'price': '613,00 EUR', 'unit': 't', 'vorwoche': '22,00', 'spanne': '550,00 - 654,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Ammonsulfatsalpeter, 27 % N', 'price': '651,00 EUR', 'unit': 't', 'vorwoche': '9,00', 'spanne': '575,00 - 710,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Schwefels. Ammoniak, 21 % N, 24 % S', 'price': '573,00 EUR', 'unit': 't', 'vorwoche': '30,00', 'spanne': '418,00 - 650,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/stickstoffduenger-20>
+{'Category': 'Stickstoffdünger', 'Product': {'product_name': 'Alzon, 46 % N', 'price': '913,00 EUR', 'unit': 't', 'vorwoche': '3,00', 'spanne': '900,00 - 930,00'}}
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/sauen-26> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/jungbullen-13> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/ferkel-12> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/tiere-2/faersen-27> (referer: https://markt.agrarheute.com/tiere/)
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/sauen-26>
+{'Category': 'Sauen', 'Product': {'product_name': 'Sauen M', 'price': '0,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,00', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  U3', 'price': '4,81 EUR', 'unit': 'kg SG', 'vorwoche': '0,08', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  R3', 'price': '4,76 EUR', 'unit': 'kg SG', 'vorwoche': '0,07', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/jungbullen-13>
+{'Category': 'Jungbullen', 'Product': {'product_name': 'Jungbullen  O3', 'price': '4,47 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/ferkel-12>
+{'Category': 'Ferkel', 'Product': {'product_name': 'Ferkel 28 kg Basis (100er Gruppe)', 'price': '26,75 EUR', 'unit': 'Stück', 'vorwoche': '-0,93', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/tiere-2/faersen-27>
+{'Category': 'Färsen', 'Product': {'product_name': 'Färsen R3', 'price': '4,32 EUR', 'unit': 'kg SG', 'vorwoche': '0,09', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/stroh-19> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/heu-18> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/rapsschrot-17> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/stroh-19>
+{'Category': 'Stroh', 'Product': {'product_name': 'Stroh, Großballen', 'price': '91,69 EUR', 'unit': 't', 'vorwoche': '1,38', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/heu-18>
+{'Category': 'Heu', 'Product': {'product_name': 'Heu, Großballen', 'price': '112,99 EUR', 'unit': 't', 'vorwoche': '0,70', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/rapsschrot-17>
+{'Category': 'Rapsschrot', 'Product': {'product_name': 'Rapsschrot', 'price': '402,23 EUR', 'unit': 't', 'vorwoche': '25,31', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/kalkduenger-24> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kalkduenger-24>
+{'Category': 'Kalkdünger', 'Product': {'product_name': 'Kohlensaurer Kalk, 80% + 5%', 'price': '36,00 EUR', 'unit': 't', 'vorwoche': '4,00', 'spanne': '25,00 - 42,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kalkduenger-24>
+{'Category': 'Kalkdünger', 'Product': {'product_name': 'Konverterkalk, feucht, 38% + 5%', 'price': '38,00 EUR', 'unit': 't', 'vorwoche': '0,00', 'spanne': '30,00 - 42,00'}}
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/kaliduenger-22> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/futtermittel-3/sojaschrot-16> (referer: https://markt.agrarheute.com/futtermittel/)
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot, 43/44% Rohprotein', 'price': '499,85 EUR', 'unit': 't', 'vorwoche': '50,87', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot GMO, 48% Rohprotein', 'price': '523,26 EUR', 'unit': 't', 'vorwoche': '52,22', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/futtermittel-3/sojaschrot-16>
+{'Category': 'Sojaschrot', 'Product': {'product_name': 'Sojaschrot Non-GMO, 44% Rohprotein', 'price': '726,81 EUR', 'unit': 't', 'vorwoche': '33,07', 'spanne': ' - '}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kornkali 40 % K2O, ', 'price': '387,00 EUR', 'unit': 't', 'vorwoche': '9,00', 'spanne': '335,00 - 415,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kornkali 60 % K2O, ', 'price': '532,00 EUR', 'unit': 't', 'vorwoche': '-10,00', 'spanne': '499,00 - 610,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Kalimagnesia, 30% + 10%', 'price': '501,00 EUR', 'unit': 't', 'vorwoche': '14,00', 'spanne': '395,00 - 560,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/kaliduenger-22>
+{'Category': 'Kalidünger', 'Product': {'product_name': 'Magnesia Kainit, 11% + 5%', 'price': '152,00 EUR', 'unit': 't', 'vorwoche': '2,00', 'spanne': '130,00 - 190,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21>
+{'Category': 'Phosphordünger', 'Product': {'product_name': 'Triple-Superphosphat (TSP), 46 % P2O5', 'price': '631,00 EUR', 'unit': 't', 'vorwoche': '48,00', 'spanne': '629,00 - 640,00'}}
+2022-01-19 14:43:28  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/phosphorduenger-21>
+{'Category': 'Phosphordünger', 'Product': {'product_name': 'Diammonphosphat (DAP), 18 % N, 46 % P2O5', 'price': '823,00 EUR', 'unit': 't', 'vorwoche': '57,00', 'spanne': '730,00 - 905,00'}}
+2022-01-19 14:43:28  [scrapy.core.engine] DEBUG  Crawled (200) <GET https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23> (referer: https://markt.agrarheute.com/duengemittel/)
+2022-01-19 14:43:29  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 13/9/16/4', 'price': '349,00 EUR', 'unit': 't', 'vorwoche': '2,00', 'spanne': '330,00 - 365,00'}}
+2022-01-19 14:43:29  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 14/10/16/5', 'price': '324,00 EUR', 'unit': 't', 'vorwoche': '3,00', 'spanne': '310,00 - 365,00'}}
+2022-01-19 14:43:29  [scrapy.core.scraper] DEBUG  Scraped from <200 https://markt.agrarheute.com/duengemittel-4/mehrnaehrstoffduenger-23>
+{'Category': 'Mehrnährstoffdünger', 'Product': {'product_name': 'NPK 15/15/15', 'price': '598,00 EUR', 'unit': 't', 'vorwoche': '-13,00', 'spanne': '528,00 - 681,00'}}
+2022-01-19 14:43:29  [scrapy.core.engine] INFO  Closing spider (finished)
+2022-01-19 14:43:29  [scrapy.statscollectors] INFO  Dumping Scrapy stats:
+{'downloader/request_bytes': 8118,
+ 'downloader/request_count': 29,
+ 'downloader/request_method_count/GET': 29,
+ 'downloader/response_bytes': 1267426,
+ 'downloader/response_count': 29,
+ 'downloader/response_status_count/200': 29,
+ 'elapsed_time_seconds': 5.306307,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 19, 9, 13, 29, 79946),
+ 'httpcompression/response_bytes': 8521834,
+ 'httpcompression/response_count': 28,
+ 'item_scraped_count': 48,
+ 'log_count/DEBUG': 77,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 29,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 28,
+ 'scheduler/dequeued/memory': 28,
+ 'scheduler/enqueued': 28,
+ 'scheduler/enqueued/memory': 28,
+ 'start_time': datetime.datetime(2022, 1, 19, 9, 13, 23, 773639)}
+2022-01-19 14:43:29  [scrapy.core.engine] INFO  Spider closed (finished)
