@@ -89,3 +89,8 @@ SPIDER_MIDDLEWARES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# Log Configuaration
+LOG_LEVEL = 'INFO'  # to only display errors
+# LOG_FORMAT = '%(levelname)s: %(message)s'
+LOG_FILE = 'log.txt'
