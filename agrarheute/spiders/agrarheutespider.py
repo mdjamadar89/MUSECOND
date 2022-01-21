@@ -4,7 +4,7 @@ from gc import callbacks
 import logging
 from urllib import request
 import scrapy
-import agrarheute.config as config
+import agrarheute.AgrarheuteConfig as Config
 
 class agrarheuteSpider(scrapy.Spider):
     name = 'agrarheuteSpider'
@@ -12,11 +12,22 @@ class agrarheuteSpider(scrapy.Spider):
     #start_urls = ['https://markt.agrarheute.com']
     #base_url = 'https://markt.agrarheute.com{}'
     #relative_urls=['/marktfruechte/','/tiere/','/futtermittel/','/duengemittel/','/diesel-5','/kuhmilch-25']
+    urls = Config.relative_urls
 
-    
+    def __init__(self, *args, **kwargs): 
+      super(agrarheuteSpider, self).__init__(*args, **kwargs) 
+      if kwargs:
+          self.urls = kwargs
+          
+
+
+          
+       
+
     def start_requests(self):
-        for i in config.relative_urls:
-            yield scrapy.Request(config.base_url.format(i))
+                
+        for i in self.urls.values():
+            yield scrapy.Request(Config.base_url.format(i))
 
     def parse(self, response):
         
